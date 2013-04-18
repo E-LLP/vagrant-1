@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 $script = <<SCRIPT
-sudo apt-get update
+wget --no-check-certificate -O - http://bootstrap.saltstack.org | sudo sh
 SCRIPT
 
 Vagrant::Config.run do |config|
