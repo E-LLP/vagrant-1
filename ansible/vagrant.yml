@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: no
+  become: yes
+  environment:
+    GOPATH: /gopath
+  vars:
+    project: vagrant
+  tasks:
+    - name: hello, world
+      shell: echo
